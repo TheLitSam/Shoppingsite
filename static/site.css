@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kanit&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Kanit&family=PT+Serif&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@700&family=Josefin+Sans&family=Kanit&family=PT+Serif&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background-color: white;
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar ul li {
+    list-style: none;
+    padding: 16px 34px;
+}
+
+#navbar ul li a {
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar ul li a:hover {
+    color: grey;
+}
+
+
+#homepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat', cursive;
+    font-size: 73px;
+    color: white;
+    height: 90vh;
+    background: center/cover no-repeat url("/static/homebg.jpg");
+}
+
+#productpage1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+    background: center/cover no-repeat url("/static/menswear.jpg");
+    height: 500px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#productpage1:hover {
+    scale: 1.05;
+}
+
+
+#productpage2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+    background: center/cover no-repeat url("/static/womenswear.jpg");
+    height: 500px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#productpage2:hover {
+    scale: 1.05;
+}
+
+#productpage3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+    background: center/cover no-repeat url("/static/boyswear.jpg");
+    height: 500px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#productpage3:hover {
+    scale: 1.05;
+}
+
+#productpage4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 15px;
+    background: center/cover no-repeat url("/static/girlswear.jpg");
+    height: 500px;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+#productpage4:hover {
+    scale: 1.05;
+}
+
+#infopage {
+    display: grid;
+    grid-template-areas: 
+    "infobox1 infobox2 infobox2 infobox2"
+    "infobox1 infobox2 infobox2 infobox2"
+    ;
+    height: 200px;
+    margin: 15px 10px;
+    padding: 15px 10px;
+}
+
+
+#infopage p {
+    text-align: center;
+}
+
+#infobox1 {
+    grid-area: infobox1;
+    margin-right: 10px;
+    /* border: 2px solid black;
+    border-radius: 8px; */
+    padding: 10px 15px;
+}
+
+
+#infobox2 {
+    grid-area: infobox2;
+    margin-left: 10px;
+    /* border: 2px solid black;
+    border-radius: 8px; */
+    padding: 10px 15px;
+}
+
+.sechead {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family: 'PT Serif', serif;
+}
+
+#sponsers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+#sponimg {
+    display: flex;
+}
+
+#sponimg img {
+    margin: 10px 15px;
+    height: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 25px;
+    margin-top: 30px;
+}
+
+.containimg {
+    display: flex;
+}
+
+.containimg img {
+    height: 300px;
+    margin: 10px 15px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.containimg img:hover {
+    scale: 1.05;
+}

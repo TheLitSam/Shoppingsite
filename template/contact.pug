@@ -1,0 +1,20 @@
+extends base.pug
+
+block style 
+        style 
+            include ../static/site.css
+            include ../static/styleContact.css
+
+block content 
+    div.container
+        h1 Get In Touch With Us
+        form(action="/contact", method="post", class="myForm")
+            input(type="text", class="myInput", name="myName", placeholder="Enter Your Name") 
+            input(type="number", class="myInput", name="myNumber", placeholder="Enter Your Phone Number") 
+            input(type="email", class="myInput", name="myEmail", placeholder="Enter Your Email") 
+            input(type="text", class="myInput", name="myAddress", placeholder="Enter Address") 
+            textarea(name="myInfo", cols="30", rows="10", placeholder="Enter About Yourself") 
+            button.btn 
+                | Submit Now
+    
+    p #message 

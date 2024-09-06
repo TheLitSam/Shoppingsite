@@ -1,0 +1,74 @@
+doctype html 
+html    
+    head 
+        title Dancing Site | GimmyJimmy.com 
+        style
+            include ../static/site.css
+    body 
+        nav#navbar 
+            ul 
+                li #[a(href="/") Shop]
+                li #[a(href="/") Service]
+                li #[a(href="/") Products]
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Privacy Policy]
+                li #[a(href="/") Contact Us]
+
+        section#homepage 
+            | Style Made Simple.
+            
+        section#productpage1
+            | Mens Wear
+            div.containimg
+                img(src="../static/menshirt.jpg", alt="") 
+                img(src="../static/manpant.jpg", alt="")
+                img(src="../static/menshoe.jpg", alt="")
+
+        section#productpage2 
+            | Womens Wear
+            div.containimg
+                img(src="../static/womenshirt.jpg", alt="") 
+                img(src="../static/womenpant.jpg", alt="")
+                img(src="../static/womenshoe.jpg", alt="")
+
+        section#productpage3 
+            | Boys Wear 
+            div.containimg
+                img(src="../static/boyshirt.jpg", alt="") 
+                img(src="../static/boypant.jpg", alt="")
+                img(src="../static/boyshoe.jpg", alt="")
+        
+        section#productpage4 
+            | Girls Wear 
+            div.containimg
+                img(src="../static/girlshirt.jpg", alt="") 
+                img(src="../static/girlpant.jpg", alt="")
+                img(src="../static/girlshoe.jpg", alt="")
+            
+        section#infopage 
+            div#infobox1
+                div.sechead 
+                    | E-Commerce
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum totam ratione perferendis recusandae aspernatur fuga blanditiis ducimus excepturi est velit laboriosam necessitatibus nostrum non libero, eum quo vitae eveniet ea!
+
+            div#infobox2 
+                div.sechead 
+                    | Our Aim 
+                p Voluptatum nulla reprehenderit architecto voluptatibus consectetur reiciendis alias excepturi, tempore ipsum veniam vero atque ullam illo! Itaque fugiat at eligendi, iusto quaerat labore illo doloremque possimus voluptatibus provident odio ad quasi quibusdam accusantium ut tempore praesentium, cupiditate, laborum alias perferendis? Recusandae!     
+
+        section#sponsers 
+            div.sechead 
+                | Our Sponsers
+            div#sponimg 
+                img(src="../static/OurSponsers/zara.jpg", alt="")
+                img(src="../static/OurSponsers/peterengland.png", alt="")
+                img(src="../static/OurSponsers/allensolly.png", alt="")
+                img(src="../static/OurSponsers/nike.png", alt="")
+                img(src="../static/OurSponsers/adidas.png", alt="")
+
+        footer 
+            | © 2019-2023 GimmyJimmy.com
+
+        script 
+            include ../static/index.js
